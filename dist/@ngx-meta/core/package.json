@@ -1,0 +1,53 @@
+{
+  "name": "@ngx-meta/core",
+  "version": "9.0.0",
+  "description": "Dynamic page title & meta tags utility for Angular (w/server-side rendering)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fulls1z3/ngx-meta.git"
+  },
+  "keywords": [
+    "open graph",
+    "page title",
+    "meta tags",
+    "server side rendering",
+    "dom",
+    "seo",
+    "meta",
+    "universal",
+    "angular"
+  ],
+  "author": {
+    "name": "Burak Tasci",
+    "email": "mail@buraktasci.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fulls1z3/ngx-meta/core/issues"
+  },
+  "homepage": "https://github.com/fulls1z3/ngx-meta/tree/master/packages/@ngx-meta/core#readme",
+  "peerDependencies": {
+    "@angular/core": ">=9.0.0 <10.0.0",
+    "@angular/platform-browser": ">=9.0.0 <10.0.0",
+    "@angular/platform-browser-dynamic": ">=9.0.0 <10.0.0",
+    "@angular/router": ">=9.0.0 <10.0.0",
+    "rxjs": ">=6.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../../dist/@ngx-meta/core"
+  },
+  "main": "bundles/ngx-meta-core.umd.js",
+  "module": "fesm2015/ngx-meta-core.js",
+  "es2015": "fesm2015/ngx-meta-core.js",
+  "esm2015": "esm2015/ngx-meta-core.js",
+  "fesm2015": "fesm2015/ngx-meta-core.js",
+  "typings": "ngx-meta-core.d.ts",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^2.1.0"
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
+  }
+}
